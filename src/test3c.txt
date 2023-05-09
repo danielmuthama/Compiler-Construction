@@ -1,0 +1,8 @@
+-- Function with an Boolean Variable
+-- should throw error on line 7 due to integer
+
+function test3 returns boolean;
+    b: boolean is 5 < 2;
+begin
+    b and 2;    
+end;

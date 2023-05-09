@@ -1,0 +1,20 @@
+-- The test case from PDF but without any errors
+
+function test returns integer;
+	a: integer is 3;
+	f: integer is 7;
+	b: integer is
+		if a > 1 then
+			2;
+		else
+			5;
+		endif;
+	c: integer is 2 + 3;
+	d: boolean is 7 = f;
+begin
+	case b is
+		when 1 => 4;
+		when 2 => b;
+		others => c;
+	endcase;
+end;

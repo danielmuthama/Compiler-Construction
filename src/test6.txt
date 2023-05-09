@@ -1,0 +1,25 @@
+-- Test of Multiple Semantic Errors from Project 4 PDF
+-- error is a+5, should be boolean
+-- error is undefined f in 7=f
+-- error is case type mismatch as b is integer while c is real
+-- total of 3 errs
+
+function test a: integer returns integer;
+	b: integer is
+		if a + 5 then
+			2;
+		else
+			5;
+		endif;
+	c: real is 9.8 - 2 + 8;
+	d: boolean is 7 = f;
+begin
+	case b is
+		when 1 => 4.5 + c;
+		when 2 => b;
+		others => c;
+	endcase;
+end;
+
+
+

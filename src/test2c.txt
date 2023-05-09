@@ -1,0 +1,8 @@
+-- Function with a Variable
+--should throw error on line 5 since it's not boolean, and line 7 since b is not numeric type
+
+function test2 returns boolean;
+    b: boolean is 5;
+begin
+    b + 2 * 8;    
+end;

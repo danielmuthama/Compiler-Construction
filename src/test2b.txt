@@ -1,0 +1,8 @@
+-- Function with a Variable
+--should throw error on line 5 due to real number
+
+function test2 returns integer;
+    b: integer is 9.5;
+begin
+    b + 2 * 8;    
+end;

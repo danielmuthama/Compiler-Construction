@@ -1,0 +1,7 @@
+-- Function with an Boolean Variable
+
+function test3 returns boolean;
+    b: boolean is 5 < 2;
+begin
+    b and 2 < 8;    
+end;

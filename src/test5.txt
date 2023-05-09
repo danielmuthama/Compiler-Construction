@@ -1,0 +1,11 @@
+-- Function with non-integer remainders, duplicate
+
+function test4 returns integer;
+	a: integer is 5;
+	b: real is 4 rem 3;
+	c: real is 4.5 rem 3;
+	d: real is 4 rem 3.5;
+	a: integer is 2;
+begin
+	a + 10;   
+end;
